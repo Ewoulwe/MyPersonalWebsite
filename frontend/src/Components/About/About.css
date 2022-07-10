@@ -1,0 +1,466 @@
+.About-main
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+    row-gap: 100px;
+}
+.About-info
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.About-title
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+.About-info-personal
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    margin-bottom: 100px;
+}
+
+.About-info-personal-text
+{
+    width: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    flex-direction: column;
+}
+.About-info-personal-text-title
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.About-info-personal-text-title h1
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0px;
+}
+.About-info-personal-text-textlists
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.About-info-personal-text-textlists p
+{
+    color: rgb(204, 204, 204);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 3px;
+    margin-left: 0px;
+}
+.About-info-personal-links
+{
+    position: relative;
+    display: flex;
+    row-gap: 40px;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    flex-direction: column;
+}
+.About-info-personal-links-buttons
+{
+    position: relative;
+    display: flex;
+    row-gap: 40px;
+    column-gap: 40px;
+    align-items: center;
+    width: 100%;
+}
+.About-info-personal-links a
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+    background: #FFB400;
+    border-radius: 10px;
+    border: 2px solid #FFB400;
+    transition: .5s;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.About-info-personal-links a:hover
+{
+    border-radius: 20px;
+    transition: .5s;
+    background: none;
+}
+.About-info-personal-links-socialmedia
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.About-info-personal-links-socialmedia div
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #FFB400;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About-info-personal-links-socialmedia div span:hover
+{
+    background: none;
+    border-radius: 20px;
+    transition: .5s;
+}
+.About-info-personal-links-socialmedia div ion-icon
+{
+    color: white;
+    font-size: 20px;
+}
+.About-info-personal-links-socialmedia div span
+{
+    position: absolute;
+    height: 100%;
+    background: #FFB400;
+    border-radius: 30px;
+    left: 60px;
+    transition: .5s;
+    border: 2px solid #FFB400;
+}
+.About-info-personal-links-socialmedia div span p
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px;
+    padding: 0px;
+    margin-left: 30px;
+    position: relative;
+    margin-right: 30px;
+    pointer-events: none;
+}
+.About-info-istatistic
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.About-info-istatistic-card
+{
+    position: relative;
+    min-width: 200px;
+    min-height: 150px;
+    border: 1px solid #FFB400;
+    border-radius: 10px;
+}
+.About-info-istatistic-card h1
+{
+    color: #FFB400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.About-info-istatistic-card h2
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.About-skills
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 50px;
+}
+.About-skills-title
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.About-skills-title h1
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+.About-skills-content
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 50px;
+}
+.About-skills-card
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    max-width: 870px;
+    height: 40px;
+    border: 1px solid #FFB400;
+    border-radius: 5px;
+}
+.About-skills-card-title
+{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateY(-25px);
+    border-radius: 0px;
+}
+.About-skills-card-title h1
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    background: #111111;
+    padding-left: 10px;
+    border-radius: 0px;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+.About-skills-card-amout
+{
+    position: relative;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.About-skills-card-amout div
+{
+    width: 90%;
+    position: relative;
+    height: 10px;
+    background: #FFB400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+.About-services
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
+    width: 100%;
+    position: relative;
+}
+.About-services-title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.About-services-title h1
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+.About-services-content
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 70%;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+.About-services-card
+{
+    width: 400px;
+    height: 300px;
+    border: 1px solid #FFB400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px;
+}
+.About-services-card ion-icon
+{
+    color: #FFB400;
+    font-size: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+.About-services-card h1
+{
+    color: #FFB400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+}
+.About-services-card p
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px)
+{
+    .About-info-personal
+    {
+        flex-direction: column;
+        row-gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .About-info-personal
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    .About-info-personal-text
+    {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .About-info-personal-text-title
+    {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .About-info-personal-text-textlists
+    {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .About-info-personal-links
+    {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .About-info-personal-links-buttons
+    {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 400px;
+    }
+    .About-info-personal-links-socialmedia
+    {
+        display: none;
+    }
+}

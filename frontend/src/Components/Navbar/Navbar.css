@@ -1,0 +1,85 @@
+.NavbarMain
+{
+    width: 100px;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 100px;
+    z-index: 500;
+}
+.navbar-buttons
+{
+    position: relative;
+    z-index: 51;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.navbar-buttons-text
+{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #2B2A2A;
+    border-radius: 20px;
+    right: 50px;
+    transition: width .5s , right .5s , opacity .5s;
+}
+.navbar-buttons-icon
+{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #545454;
+    border-radius: 50px;
+}
+.navbar-buttons:hover .navbar-buttons-text
+{
+    width: 150px;
+    right: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: width .5s , background .5s , opacity .5s;
+    background: orange;
+    opacity: 1;
+
+}
+.navbar-buttons:hover .navbar-buttons-icon
+{
+    transition: .5s;
+    background: orange;
+}
+
+@media only screen and (max-width: 1000px)
+{
+
+    .NavbarMain
+    {
+        flex-direction: row;
+        width: 100%;
+        height: 80px;
+        bottom: 0px;
+        background: #2B2A2A;
+    }
+    .navbar-buttons-text
+    {
+        display: none;
+    }
+}
