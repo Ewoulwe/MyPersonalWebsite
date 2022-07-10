@@ -9,7 +9,7 @@ export default function Contact() {
                 <p id='contact-title'>Contact Mee <span id='hp-nametitle-2-span1'><span id='hp-nametitle-2-span4'><span id='hp-nametitle-2-span3'></span></span></span></p>
             </div>
             <div className='contact-text'>
-                <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                <p>Feeewewewel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
             </div>
             <div className='contact-info'>
               <div className='contact-info-socialmedia'>
