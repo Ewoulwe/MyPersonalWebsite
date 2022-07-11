@@ -1,5 +1,28 @@
 {
   "dependencies": {
-    "aos": "^2.3.4"
-  }
+    "aos": "^2.3.4",
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.19"
+  },
+  "name": "mypersonalwebsite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "backend": "node app",
+    "frontend": "npm run start --prefix frontend",
+    "client": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ewoulwe/MyPersonalWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ewoulwe/MyPersonalWebsite/issues"
+  },
+  "homepage": "https://github.com/Ewoulwe/MyPersonalWebsite#readme",
+  "description": ""
 }
