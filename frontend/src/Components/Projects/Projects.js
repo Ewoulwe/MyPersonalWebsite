@@ -28,7 +28,7 @@ export default function Projects() {
 
   async function getprojectsdata()
   {
-    await fetch("/projects")
+    await fetch("/getprojects")
     .then(res=> res.json())
     .then(res=> setprojects(res))
   }

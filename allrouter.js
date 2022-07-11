@@ -12,10 +12,10 @@ const router = express.Router();
 
 var jsonParser = bodyParser.json()
 
-router.get("/about/services",getservices);
-router.get("/about/skills",getskills);
-router.get("/projects",getprojects);
-router.get("/statistics",getstatistics);
+router.get("/about/getservices",getservices);
+router.get("/about/getskills",getskills);
+router.get("/getprojects",getprojects);
+router.get("/getstatistics",getstatistics);
 
 
 module.exports = router;
