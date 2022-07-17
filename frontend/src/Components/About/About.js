@@ -88,9 +88,7 @@ export default function About() {
                             <a href='/contact' className='allbuttons'>Contact Me</a>
                         </div>
                         <div className='About-info-personal-links-socialmedia'>
-                            <div data-aos="fade-left"><ion-icon className='navbar-buttons-icon' name="briefcase"></ion-icon><span className='allbuttons'><p>İnstagram</p></span></div>
-                            <div data-aos="fade-left"><ion-icon className='navbar-buttons-icon' name="briefcase"></ion-icon><span className='allbuttons'><p>Facebook</p></span></div>
-                            <div data-aos="fade-left"><ion-icon className='navbar-buttons-icon' name="briefcase"></ion-icon><span className='allbuttons'><p>Twitter</p></span></div>
+
                         </div>
                     </div>
                 </div>
