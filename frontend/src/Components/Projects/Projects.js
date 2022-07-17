@@ -11,7 +11,9 @@ export default function Projects() {
     {
       title:"deneme",
       dateandtime:"18/07/2022",
-      image:"https://www.donanimhaber.com/images/images/haber/144035/1400x1400whatsapp-resim-ve-videolarin-uzerine-cizim-yapmayi-test-ediyor.jpg",
+      images:[
+        "https://www.donanimhaber.com/images/images/haber/144035/1400x1400whatsapp-resim-ve-videolarin-uzerine-cizim-yapmayi-test-ediyor.jpg"
+      ],
       tourl:"deneme",
       tags:[
         "MERN",
@@ -34,6 +36,9 @@ export default function Projects() {
   }
 
 
+
+
+
   return (
     <div>
         <div className='projects-main'>
@@ -54,28 +59,39 @@ export default function Projects() {
 
 
 
-              {projects.map(projects=>{
+              {projects.map(project=>{
+
                 return(
-                <div data-aos="fade-right" id='projects-card' className='projects-card'>
+                <div href="den" data-aos="fade-right" id={project.tourl} className='projects-card'>
+                  {
+                    window.addEventListener("click",function(event){
+                      if(event.target.id == project.tourl)
+                      {
+                        window.location.href = "/Project/" + project.tourl;
+                      }
+                    })
+                  }
                   <div className='projects-card-imgarea'>
-                    <img src={projects.image}></img>
+                    <img src={project.images[0]}></img>
                   </div>
                   <div className='projects-card-titlearea'>
                     <div className='projects-card-titlearea-titleANDtime'>
-                      <h1>{projects.title}</h1>
-                      <h2>{projects.dateandtime}</h2>
+                      <h1>{project.title}</h1>
+                      <h2>{project.dateandtime}</h2>
                     </div>
                     <div className='projects-card-titlearea-tags'>
-                    {projects.tags.map(tags=>{
+                    {project.tags.map(tags=>{
                       return(
-                        <p>{tags}</p>
+                        <p key={tags.index}>{tags}</p>
                       )
                     })}
                     </div>
                   </div>
                 </div>
                 )
+                
               })}
+
 
             </div>
         </div>

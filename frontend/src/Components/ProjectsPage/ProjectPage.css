@@ -1,0 +1,166 @@
+.projectpage-main
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    row-gap: 50px;
+    margin-bottom: 200px;
+}
+.projectpage-slider
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projectpage-imagesandvideos
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.projectpage-imagesandvideos img
+{
+    width: 100%;
+    object-fit:cover;
+    height: 40vw;
+}
+#projectsliderleftbutton
+{
+    position: absolute;
+    color: white;
+    font-size: 10vw;
+    left: 30px;
+    transition: .5s;
+
+}
+#projectsliderrightbutton
+{
+    position: absolute;
+    color: white;
+    font-size: 10vw;
+    right: 30px;
+    transition: .5s;
+
+}
+#projectsliderrightbutton:hover , #projectsliderleftbutton:hover
+{
+    color: #FFB400;
+    transition: .5s;
+}
+.projectpage-imagesandvideos-amout
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: none;
+    bottom: 0px;
+    column-gap: 20px;
+}
+.projectpage-imagesandvideos-amout-div
+{
+    position: relative;
+    width: 5%;
+    max-width: 80px;
+    height: 5%;
+    background: white;
+    border-radius: 20px;
+    bottom: 10%;
+}
+.projectpage-aboutproject
+{
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.projectpage-aboutproject h1
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.projectpage-aboutproject p
+{
+    color: rgb(207, 207, 207);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+.projectpage-tags
+{
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.projectpage-tags p
+{
+    color: rgb(207, 207, 207);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 500px)
+{
+    #projectsliderrightbutton , #projectsliderleftbutton
+    {
+        font-size: 40px;
+        
+    }
+}
+@media only screen and (min-width: 800px)
+{
+    #projectsliderrightbutton , #projectsliderleftbutton
+    {
+        font-size: 50px;
+        
+    }
+}
+@media only screen and (min-width: 1000px)
+{
+    #projectsliderrightbutton , #projectsliderleftbutton
+    {
+        font-size: 60px;
+        bottom: 50px;
+    }
+    #projectsliderrightbutton
+    {
+        right: 150px;
+    }
+    #projectsliderleftbutton
+    {
+        left: 150px;
+    }
+}

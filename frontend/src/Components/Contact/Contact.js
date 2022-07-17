@@ -1,12 +1,14 @@
 import React from 'react'
 import "./Contact.css"
 
+
+
 export default function Contact() {
   return (
     <div>
         <div className='contact-main'>
             <div className='contact-title'>
-                <p id='contact-title'>Contact Mee <span id='hp-nametitle-2-span1'><span id='hp-nametitle-2-span4'><span id='hp-nametitle-2-span3'></span></span></span></p>
+                <p id='contact-title'>Contact Me <span id='hp-nametitle-2-span1'><span id='hp-nametitle-2-span4'><span id='hp-nametitle-2-span3'></span></span></span></p>
             </div>
             <div className='contact-text'>
                 <p>Fewewewel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>

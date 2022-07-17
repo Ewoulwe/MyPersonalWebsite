@@ -184,8 +184,9 @@
     align-items: center;
     column-gap: 50px;
     margin-top: 50px;
+    text-decoration: none;
 }
-.hp-buttons button
+.hp-buttons a
 {
     width: 150px;
     height: 50px;
@@ -196,8 +197,13 @@
     font-weight: 100;
     transition: .5s;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
 }
-.hp-buttons button:hover
+.hp-buttons a:hover
 {
     background: none;
     border: 2px solid #FFB400;

@@ -15,7 +15,7 @@ var jsonParser = bodyParser.json()
 router.get("/about/getservices",getservices);
 router.get("/about/getskills",getskills);
 router.get("/getprojects",getprojects);
-router.get("/getstatistics",getstatistics);
+router.get("/about/getstatistics",getstatistics);
 
 
 module.exports = router;

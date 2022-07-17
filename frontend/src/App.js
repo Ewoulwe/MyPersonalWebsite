@@ -6,6 +6,8 @@ import Contact from "./Components/Contact/Contact"
 import Projects from "./Components/Projects/Projects"
 import About from "./Components/About/About"
 import AOS from 'aos'
+import ProjectPage from "./Components/ProjectsPage/ProjectPage"
+
 
 
 
@@ -52,7 +54,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-
+        <Route path="/Project/*" element={<ProjectPage />} />
 
       </Routes>
     </div>

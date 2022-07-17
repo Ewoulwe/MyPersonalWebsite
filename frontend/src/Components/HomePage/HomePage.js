@@ -15,7 +15,7 @@ export default function HomePage() {
             <p id='hp-nametitle-2'>İshak Yöndemli <span id='hp-nametitle-2-span1'><span id='hp-nametitle-2-span4'><span id='hp-nametitle-2-span3'></span></span></span></p>
           </div>
           <div className='hp-jobtitle'>
-            <p id='hp-jobtitle-1'>Web Designer</p>
+            <p id='hp-jobtitle-1'>Web Developer</p>
           </div>
           <div className='hp-socialmedia'>
             <ion-icon name="logo-instagram"></ion-icon>
@@ -25,8 +25,8 @@ export default function HomePage() {
             <ion-icon name="logo-whatsapp"></ion-icon>
           </div>
           <div className='hp-buttons'>
-            <button className='allbuttons' id='hp-btn1'>About Me</button>
-            <button className='allbuttons' id='hp-btn2'>Hire Me</button>
+            <a href='/about' className='allbuttons' id='hp-btn1'>About Me</a>
+            <a href='/contact' className='allbuttons' id='hp-btn2'>Hire Me</a>
           </div>
         </div>
       </div>

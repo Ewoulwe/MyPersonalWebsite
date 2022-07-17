@@ -1,9 +1,60 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./About.css"
 
 
 
+
+
+
 export default function About() {
+
+
+
+      const[skills,setskills] = useState([
+        {
+            title:"HTML",
+            float:"45%",
+        },
+        {
+            title:"Reactjs",
+            float:"80%",
+        }
+      ]);
+      const[services,setservices] = useState([
+        {
+          title:"deneme",
+          text:"18/07/2022",
+          image:"person",
+        }
+      ]);
+      const[statistics,setstatistics] = useState([
+        {
+          title:"Mutlu MüŞteri",
+          amout:"38+",
+        }
+      ]);
+    
+      useEffect(() => {
+        getaboutdata();
+      },[]);
+
+
+      async function getaboutdata()
+      {
+        await fetch("/about/getstatistics")
+        .then(res=> res.json())
+        .then(res=> setstatistics(res))
+
+        await fetch("/about/getskills")
+        .then(res=> res.json())
+        .then(res=> setskills(res))
+
+        await fetch("/about/getservices")
+        .then(res=> res.json())
+        .then(res=> setservices(res))
+      }
+
+
   return (
     <div>
         <div className='About-main'>
@@ -19,7 +70,7 @@ export default function About() {
                         <div data-aos="fade-right" className='About-info-personal-text-textlists'>
                             <p>Name: <font color='white'>İshak</font></p>
                             <p>Last Name: <font color='white'>Yöndemli</font></p>
-                            <p>Age: <font color='white'>18</font></p>
+                            <p>Age: <font color='white'>24</font></p>
                             <p>Country: <font color='white'>Türkiye</font></p>
                             <p>Freelance: <font color='white'>Available</font></p>
                             <p>E-Mail: <font color='white'>thedooptr@gmail.com</font></p>
@@ -30,7 +81,7 @@ export default function About() {
                     <div data-aos="fade-left" className='About-info-personal-links'>
                         <div className='About-info-personal-links-buttons'>
                             <a className='allbuttons'>Download CV</a>
-                            <a className='allbuttons'>Contact Me</a>
+                            <a href='/contact' className='allbuttons'>Contact Me</a>
                         </div>
                         <div className='About-info-personal-links-socialmedia'>
                             <div data-aos="fade-left"><ion-icon className='navbar-buttons-icon' name="briefcase"></ion-icon><span className='allbuttons'><p>İnstagram</p></span></div>
@@ -40,22 +91,16 @@ export default function About() {
                     </div>
                 </div>
                 <div className='About-info-istatistic'>
-                    <div data-aos="fade-left" className='About-info-istatistic-card'>
-                        <h1>48+</h1>
-                        <h2>Happy Customers</h2>
-                    </div>
-                    <div data-aos="fade-left" className='About-info-istatistic-card'>
-                        <h1>74+</h1>
-                        <h2>Selling Products</h2>
-                    </div>
-                    <div data-aos="fade-left" className='About-info-istatistic-card'>
-                        <h1>48+</h1>
-                        <h2>Happy Customers</h2>
-                    </div>
-                    <div data-aos="fade-left" className='About-info-istatistic-card'>
-                        <h1>74+</h1>
-                        <h2>Selling Products</h2>
-                    </div>
+
+                    {statistics.map(statistics=>{
+                        return(
+                        <div data-aos="fade-left" className='About-info-istatistic-card'>
+                            <h1>{statistics.amout}</h1>
+                            <h2>{statistics.title}</h2>
+                        </div>
+                        )
+                    })}
+
                 </div>
             </div>
             <div className='About-skills'>
@@ -63,46 +108,20 @@ export default function About() {
                     <h1>Skills</h1>
                 </div>
                 <div className='About-skills-content'>
-                    <div data-aos="fade-right" className='About-skills-card'>
-                        <div className='About-skills-card-title'>
-                            <h1><font  color="#FFB400">CSS</font> 90%</h1>
-                        </div> 
-                        <div className='About-skills-card-amout'>
-                            <div></div>
+
+                    {skills.map(skills=>{
+                        return(
+                        <div data-aos="fade-right" className='About-skills-card'>
+                            <div className='About-skills-card-title'>
+                                <h1><font  color="#FFB400">{skills.title}</font> {skills.float}</h1>
+                            </div> 
+                            <div style={{width:skills.float}} className='About-skills-card-amout'>
+                                <div></div>
+                            </div>
                         </div>
-                    </div>
-                    <div data-aos="fade-right" className='About-skills-card'>
-                        <div className='About-skills-card-title'>
-                            <h1><font  color="#FFB400">CSS</font> 90%</h1>
-                        </div> 
-                        <div className='About-skills-card-amout'>
-                            <div></div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-right" className='About-skills-card'>
-                        <div className='About-skills-card-title'>
-                            <h1><font  color="#FFB400">CSS</font> 90%</h1>
-                        </div> 
-                        <div className='About-skills-card-amout'>
-                            <div></div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-right" className='About-skills-card'>
-                        <div className='About-skills-card-title'>
-                            <h1><font  color="#FFB400">CSS</font> 90%</h1>
-                        </div> 
-                        <div className='About-skills-card-amout'>
-                            <div></div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-right" className='About-skills-card'>
-                        <div className='About-skills-card-title'>
-                            <h1><font  color="#FFB400">CSS</font> 90%</h1>
-                        </div> 
-                        <div className='About-skills-card-amout'>
-                            <div></div>
-                        </div>
-                    </div>
+                        )
+                    })}
+
                 </div>
             </div>
             <div className='About-services'>
@@ -110,21 +129,17 @@ export default function About() {
                     <h1>Services</h1>
                 </div>
                 <div className='About-services-content'>
-                    <div data-aos="fade-right" className='About-services-card'>
-                        <ion-icon name="desktop-outline"></ion-icon>
-                        <h1>Responsive Design</h1>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-                    </div>
-                    <div data-aos="fade-right" className='About-services-card'>
-                        <ion-icon name="desktop-outline"></ion-icon>
-                        <h1>Responsive Design</h1>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-                    </div>
-                    <div data-aos="fade-right" className='About-services-card'>
-                        <ion-icon name="desktop-outline"></ion-icon>
-                        <h1>Responsive Design</h1>
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-                    </div>
+
+                    {services.map(services=>{
+                        return(
+                        <div data-aos="fade-right" className='About-services-card'>
+                            <ion-icon name={services.image}></ion-icon>
+                            <h1>{services.title}</h1>
+                            <p>{services.text}</p>
+                        </div>
+                        )
+                    })}
+
                 </div>
             </div>
             <div className='About-clients'>

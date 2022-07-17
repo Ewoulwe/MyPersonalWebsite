@@ -15,8 +15,7 @@ const projectsschema = new Schema({
         require:true
     },
     image:{
-        type:String,
-        require:true
+        
     },
     tourl:{
         type:String,
