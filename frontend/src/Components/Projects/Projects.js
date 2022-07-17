@@ -45,16 +45,7 @@ export default function Projects() {
             <div className='projects-title'>
                 <p id='contact-title'>Projects <span id='hp-nametitle-2-span1'><span id='hp-nametitle-2-span4'><span id='hp-nametitle-2-span3'></span></span></span></p>
             </div>
-            <div className='projects-categories'>
 
-                <p className='tags'>Web Design</p>
-                <p className='tags'>Fullstack Website</p>
-                <p className='tags'>One Page Website</p>
-                <p className='tags'>Graphic Design</p>
-                <p className='tags'>MERN Stack</p>
-
-
-            </div>
             <div className='projects-content'>
 
 
