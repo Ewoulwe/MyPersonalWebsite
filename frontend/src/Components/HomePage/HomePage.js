@@ -1,5 +1,7 @@
 import React from 'react'
 import "./HomePage.css"
+import personimg from "./julian-wan-WNoLnJo7tS8-unsplash.jpg"
+
 
 
 export default function HomePage() {
@@ -7,7 +9,7 @@ export default function HomePage() {
     <div>
       <div className='hp-main'>
         <div className='hp-image'>
-          <img alt='person' src='https://tunis.ibthemespro.com/static/media/img-mobile.fdf36938a886019a0f27.jpg'></img>
+          <img alt='person' src={personimg}></img>
         </div>
         <div className='hp-content'>
           <div className='hp-nametitle'>
