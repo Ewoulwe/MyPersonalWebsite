@@ -24,7 +24,12 @@ export default function About() {
           title:"deneme",
           text:"18/07/2022",
           image:"person",
-        }
+        },
+        {
+            title:"deneme",
+            text:"18/07/2022",
+            image:"cog-outline",
+        },
       ]);
       const[statistics,setstatistics] = useState([
         {
