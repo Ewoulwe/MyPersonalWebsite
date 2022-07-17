@@ -126,7 +126,11 @@
     padding: 0px;
     text-decoration: none;
 }
-
+#projectpagedateandtime
+{
+    right: 0px;
+    position: absolute;
+}
 
 
 

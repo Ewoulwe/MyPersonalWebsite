@@ -1,13 +1,11 @@
 import React, { useState , useEffect } from 'react';
 import  "./ProjectPage.css"
-import { useAutoAnimate } from '@formkit/auto-animate/react'
 
 
 
 export default function ProjectPage() {
 
 
-const [animationParent] = useAutoAnimate();
 
 
 const[projectsall,setprojectsall] = useState([
@@ -136,6 +134,7 @@ window.addEventListener("click",function(e){
                 <p>#{tagss}</p>
               )
             })}
+            <p id='projectpagedateandtime'>{projectsall[0].dateandtime}</p>
       </div>
       <div className='projectpage-aboutproject'>
             <h1>{projectsall[0].title}</h1>
