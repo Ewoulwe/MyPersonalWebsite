@@ -49,7 +49,6 @@ export default function Projects() {
             <div className='projects-content'>
 
 
-
               {projects.map(project=>{
 
                 return(
